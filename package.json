@@ -2,21 +2,15 @@
   "name": "pet-pet-gif",
   "version": "1.0.9",
   "description": "Given an avatar, generate a petting gif (known as \"petpet\" or \"pet the\").",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aDu/pet-pet-gif.git"
   },
-  "keywords": [
-    "petpet",
-    "pet gif",
-    "pet the",
-    "petting",
-    "animation"
-  ],
   "author": "Alan Du",
   "license": "ISC",
   "bugs": {
@@ -25,6 +19,14 @@
   "homepage": "https://github.com/aDu/pet-pet-gif#readme",
   "dependencies": {
     "gifencoder": "^2.0.1",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "fastify": "^4.21.0",
+    "handlebars": "^4.7.8",
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/static": "^6.10.2",
+    "@fastify/view": "^8.0.0"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
