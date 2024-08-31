@@ -1,7 +1,9 @@
 (async function() { 
 
 	// server stuff
-	const express = require("express"); 
+	const jsdom = require("jsdom");
+  const { JSDOM } = jsdom;  
+  const express = require("express"); 
 	const app = express();
   
 	// patpat stuff
@@ -22,7 +24,13 @@
 	};  
 	
   
-  app.get("/", (request, response))
+  app.get("/", (request, response) => {
+    
+    let param = request.query.avatar;
+    
+    response.send('<div>PATPAT ${param}</div>');
+    
+  });
   
 	app.get("/patpat/:avatarURL", async (request, response) => {
 	
@@ -72,7 +80,8 @@
 
     encoder.finish();
 	let result = encoder.out.getData();
-	response.send(result);
+    
+	response.send('<img src="${result}"/>');
 	console.log('served ${result} in response to ?avatarURL=${avatarURL}');
 	});
   
