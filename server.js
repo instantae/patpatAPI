@@ -70,7 +70,7 @@
         const offsetX = (1 - width) * 0.5 + 0.1;
         const offsetY = (1 - height) - 0.08;
 
-        if (i == petGifCache.length) petGifCache.push(await Canvas.loadImage(path.resolve(__dirname, `./img/pet${i}.gif`)));
+        if (i == petGifCache.length) petGifCache.push(await Canvas.loadImage(require(`./img/pet${i}.gif`)));
 
         ctx.drawImage(avatar, options.resolution * offsetX, options.resolution * offsetY, options.resolution * width, options.resolution * height);
         ctx.drawImage(petGifCache[i], 0, 0, options.resolution, options.resolution);
@@ -80,6 +80,7 @@
 
     encoder.finish();
 	let result = encoder.out.getData();
+  
     
 	response.send(`<img src="${result}"/>`);
 	console.log(`served ${result} in response to ?avatarURL=${avatarURL}`);
