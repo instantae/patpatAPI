@@ -21,9 +21,10 @@
     backgroundColor: null,
 	};  
 	
-	app.get("/:avatarURL", async (request, response) => {
+  
+	app.get("/patpat/:avatarURL", async (request, response) => {
 	
-		let avatarURL = request.params.avatarURL;
+		let avatarURL = request.query.avatarURL;
 		
 		let options = {};
 		
