@@ -22,6 +22,8 @@
 	};  
 	
   
+  app.get("/", (request, response))
+  
 	app.get("/patpat/:avatarURL", async (request, response) => {
 	
 		let avatarURL = request.query.avatarURL;
