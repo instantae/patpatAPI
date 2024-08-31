@@ -26,13 +26,13 @@
   
   app.get("/", (request, response) => {
     
-    let param = request.query.avatar;
+    let avatarURL = request.query.avatarURL;
     
-    response.send('<div>PATPAT ${param}</div>');
+    response.send(`<div>PATPAT ${avatarURL}</div>`);
     
   });
   
-	app.get("/patpat/:avatarURL", async (request, response) => {
+	app.get("/patpat", async (request, response) => {
 	
 		let avatarURL = request.query.avatarURL;
 		
@@ -81,8 +81,8 @@
     encoder.finish();
 	let result = encoder.out.getData();
     
-	response.send('<img src="${result}"/>');
-	console.log('served ${result} in response to ?avatarURL=${avatarURL}');
+	response.send(`<img src="${result}"/>`);
+	console.log(`served ${result} in response to ?avatarURL=${avatarURL}`);
 	});
   
    
