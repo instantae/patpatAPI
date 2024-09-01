@@ -2,7 +2,8 @@
 
 	// server stuff
 	const jsdom = require("jsdom");
-  const { JSDOM } = jsdom;  
+  const { JSDOM } = jsdom;
+  const fetch = require("node-fetch");  
   const express = require("express"); 
 	const app = express();
   
@@ -25,8 +26,12 @@
 	};  
 	
   
+  let discord = await fetch(`https://discord.com/users/{658399372366708776}`).then((res) => { console.log(res)});
+  
   app.get("/", (request, response) => {
     
+
+
     let avatarURL = request.query.avatarURL;
     
     response.send(`<div>PATPAT ${avatarURL}</div>`);
