@@ -1,17 +1,18 @@
 # pet-pet-API
 
+API built on express.js.
 
-API built on express.js 
+Github repo -> [https://github.com/instantae/patpatAPI/].
 
-Inspired by -> https://github.com/aDu/pet-pet-gif/.
+Inspired by -> [https://github.com/aDu/pet-pet-gif/].
 
 Given an image, generate and then responds with generated petting gif (known as "petpet"). 
 
 The avatar will bounce up and down to simulate the petting.
 
-Inspired by benisland -> https://benisland.neocities.org/petpet/.
+Inspired by benisland -> [https://benisland.neocities.org/petpet/].
 
-Further meme info: https://knowyourmeme.com/memes/pet-the-x-petthe-emotes
+Further meme info: [https://knowyourmeme.com/memes/pet-the-x-petthe-emotes].
 
 
 ## Usage
