@@ -1,6 +1,6 @@
 # pat-pat-API
 
-API built on express.js.
+API built on express.js and hosted on glitch.com.
 
 Github repo -> [https://github.com/instantae/patpatAPI/].
 
