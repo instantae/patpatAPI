@@ -7,7 +7,7 @@
 	const app = express();
   
   // discord stuff
-  // const D = require("discord.js");
+  // const Discord = require("discord.js");
   const token = 'MTI3OTYwNTEwODYyMzAxNjA4Nw.GLpYSF.8vdiqBPGwywuTFwk15qkM246QF3VIAptnqgboo';
   
   
