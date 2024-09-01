@@ -1,4 +1,4 @@
-# pet-pet-API
+# pat-pat-API
 
 API built on express.js.
 
