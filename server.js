@@ -9,6 +9,7 @@
 	// patpat stuff
 	const path = require('path');
 	const _ = require('lodash');
+  const fs = require('fs');
 
 	const GIFEncoder = require('gifencoder');
 	const Canvas = require('canvas');
@@ -70,7 +71,7 @@
         const offsetX = (1 - width) * 0.5 + 0.1;
         const offsetY = (1 - height) - 0.08;
 
-        if (i == petGifCache.length) petGifCache.push(await Canvas.loadImage(require(`/img/pet${i}.gif`)));
+        if (i == petGifCache.length) petGifCache.push(await Canvas.loadImage(`https://cdn.glitch.global/da6c9f1f-fd6a-435d-b177-4696b743cee3/pet${i}.gif`));
 
         ctx.drawImage(avatar, options.resolution * offsetX, options.resolution * offsetY, options.resolution * width, options.resolution * height);
         ctx.drawImage(petGifCache[i], 0, 0, options.resolution, options.resolution);
@@ -80,7 +81,9 @@
 
     encoder.finish();
 	let result = encoder.out.getData();
-  
+  fs.writeFile('patpat.gif', result, function (err) {
+  // animated GIF written to myanimated.gif
+});
     
 	response.send(`<img src="${result}"/>`);
 	console.log(`served ${result} in response to ?avatarURL=${avatarURL}`);
