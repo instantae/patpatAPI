@@ -6,11 +6,9 @@
 	const app = express();
   
   // discord stuff
-  const { REST } = require('@discordjs/rest');
-  const { Routes } = require('discord-api-types/v10');
+  // const { REST } = require('discord.js');
   const token = 'MTI3OTYwNTEwODYyMzAxNjA4Nw.GLpYSF.8vdiqBPGwywuTFwk15qkM246QF3VIAptnqgboo';
   
-  const rest = new REST().setToken(token); 
   
 	// patpat stuff
 	const path = require('path');
@@ -88,9 +86,9 @@
 
     encoder.finish();
 	let result = encoder.out.getData();
-  fs.writeFile('patpat.gif', result, function (err) {
+  // fs.writeFile('patpat.gif', result, function (err) {
   // animated GIF written to myanimated.gif
-});
+// });
   
   response.set('Content-Type', "image/gif")
 	response.send(result);
