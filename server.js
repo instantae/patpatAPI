@@ -1,11 +1,13 @@
 (async function() { 
 
 	// server stuff
-	const jsdom = require("jsdom");
-  const { JSDOM } = jsdom;
   const fetch = require("node-fetch");  
   const express = require("express"); 
 	const app = express();
+  
+  // discord stuff
+  const {Discord} = require('discord.js');
+  const token = 'MTI3OTYwNTEwODYyMzAxNjA4Nw.GLpYSF.8vdiqBPGwywuTFwk15qkM246QF3VIAptnqgboo';
   
 	// patpat stuff
 	const path = require('path');
@@ -26,11 +28,14 @@
 	};  
 	
   
-  let discord = await fetch(`https://discord.com/users/{658399372366708776}`).then((res) => { console.log(res)});
+  const client = new Discord({intents:[]});
+  client.token = token;
+  
+  const fetchUser = async 
+  
   
   app.get("/", (request, response) => {
     
-
 
     let avatarURL = request.query.avatarURL;
     

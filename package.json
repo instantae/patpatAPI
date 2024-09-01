@@ -18,17 +18,18 @@
   },
   "homepage": "https://github.com/aDu/pet-pet-gif#readme",
   "dependencies": {
-    "gifencoder": "^2.0.1",
-    "lodash": "^4.17.21",
-    "canvas": "^2.11.1",
-    "express": "^4.19.2",
-    "node-fetch": "^2.6.1",
-    "jsdom": "^16.4.0",
-    "fastify": "^4.28.1",
-    "handlebars": "^4.7.8",
     "@fastify/formbody": "^7.4.0",
     "@fastify/static": "^7.0.4",
-    "@fastify/view": "^9.1.0"
+    "@fastify/view": "^9.1.0",
+    "canvas": "^2.11.1",
+    "discord.js": "^14.15.3",
+    "express": "^4.19.2",
+    "fastify": "^4.28.1",
+    "gifencoder": "^2.0.1",
+    "handlebars": "^4.7.8",
+    "jsdom": "^16.4.0",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1"
   },
   "engines": {
     "node": "14.x"
