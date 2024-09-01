@@ -2,19 +2,15 @@
 (async function() { 
 
 	// server stuff
-  const fetch = require("node-fetch");  
-  const express = require("express"); 
+  	const fetch = require("node-fetch");  
+  	const express = require("express"); 
 	const app = express();
-  
-  // discord stuff
-  // const Discord = require("discord.js");
-  const token = 'MTI3OTYwNTEwODYyMzAxNjA4Nw.GLpYSF.8vdiqBPGwywuTFwk15qkM246QF3VIAptnqgboo';
-  
+ 
   
 	// patpat stuff
 	const path = require('path');
 	const _ = require('lodash');
-  const fs = require('fs');
+  	const fs = require('fs');
 
 	const GIFEncoder = require('gifencoder');
 	const Canvas = require('canvas');
@@ -24,9 +20,9 @@
 	const petGifCache = [];
 
 	const defaultOptions = {
-    resolution: 128,
-    delay: 20,
-    backgroundColor: null,
+    	resolution: 128,
+    	delay: 20,
+    	backgroundColor: null,
 	};  
 	
   
