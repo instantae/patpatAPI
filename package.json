@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/aDu/pet-pet-gif#readme",
   "dependencies": {
+    "@discordjs/rest": "^2.3.0",
     "@fastify/formbody": "^7.4.0",
     "@fastify/static": "^7.0.4",
     "@fastify/view": "^9.1.0",
     "canvas": "^2.11.1",
+    "discord-api-types": "^0.37.98",
     "discord.js": "^14.15.3",
     "express": "^4.19.2",
     "fastify": "^4.28.1",

@@ -6,7 +6,8 @@
 	const app = express();
   
   // discord stuff
-  const {Discord} = require('discord.js');
+  const {REST} = require('@discordjs/rest');
+  const {Routes} = require('discord-api-types');
   const token = 'MTI3OTYwNTEwODYyMzAxNjA4Nw.GLpYSF.8vdiqBPGwywuTFwk15qkM246QF3VIAptnqgboo';
   
 	// patpat stuff
@@ -28,14 +29,8 @@
 	};  
 	
   
-  const client = new Discord({intents:[]});
-  client.token = token;
-  
-  const fetchUser = async 
-  
   
   app.get("/", (request, response) => {
-    
 
     let avatarURL = request.query.avatarURL;
     
