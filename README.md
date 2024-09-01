@@ -4,6 +4,8 @@ API built on express.js and hosted on glitch.com.
 
 Github repo -> [https://github.com/instantae/patpatAPI/].
 
+Remix the glitch.com project -> [https://glitch.com/edit/#!/gray-satisfying-bamboo].
+
 Inspired by -> [https://github.com/aDu/pet-pet-gif/].
 
 Given an image, generate and then responds with generated petting gif (known as "petpet"). 
