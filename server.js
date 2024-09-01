@@ -24,7 +24,7 @@
 	const petGifCache = [];
 
 	const defaultOptions = {
-    resolution: 256,
+    resolution: 128,
     delay: 20,
     backgroundColor: null,
 	};  
