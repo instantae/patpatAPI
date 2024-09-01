@@ -6,9 +6,11 @@
 	const app = express();
   
   // discord stuff
-  const {REST} = require('@discordjs/rest');
-  const {Routes} = require('discord-api-types');
+  const { REST } = require('@discordjs/rest');
+  const { Routes } = require('discord-api-types/v10');
   const token = 'MTI3OTYwNTEwODYyMzAxNjA4Nw.GLpYSF.8vdiqBPGwywuTFwk15qkM246QF3VIAptnqgboo';
+  
+  const rest = new REST().setToken(token); 
   
 	// patpat stuff
 	const path = require('path');
