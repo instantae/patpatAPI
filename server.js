@@ -84,9 +84,10 @@
   fs.writeFile('patpat.gif', result, function (err) {
   // animated GIF written to myanimated.gif
 });
-    
-	response.send(`<img src="${result}"/>`);
-	console.log(`served ${result} in response to ?avatarURL=${avatarURL}`);
+  
+  response.set('Content-Type', "image/gif")
+	response.send(result);
+	// console.log(`served ${result} in response to ?avatarURL=${avatarURL}`);
 	});
   
    
