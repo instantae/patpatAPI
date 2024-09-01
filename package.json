@@ -1,7 +1,7 @@
 {
-  "name": "pet-pet-api",
+  "name": "pat-pat-api",
   "version": "1.0.0",
-  "description": "Given an avatar, generate a petting gif (known as \"petpet\" or \"pet the\").",
+  "description": "Given an avatar, generate a petting gif (known as \"petpet\").",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
